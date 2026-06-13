@@ -1,11 +1,9 @@
 import subprocess
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
-from shazamio import Shazam
 
 TOKEN = "8678235560:AAGZC8TVzmc5sT94IHJKj1TtD6Nf4AHCr1I"
 
-shazam = Shazam()
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
