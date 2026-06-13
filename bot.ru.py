@@ -1,9 +1,10 @@
+import os
 import subprocess
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 from shazamio import Shazam
 
-TOKEN = "8678235560:AAGZC8TVzmc5sT94IHJKj1TtD6Nf4AHCr1I"
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 
 shazam = Shazam()
 
